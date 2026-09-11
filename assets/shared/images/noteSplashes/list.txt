@@ -15,5 +15,5 @@ RonaTheRTD
 Indie Cross
 Sweet
 HitSingleReal
-Arrows BIG
-Arrows SMALL
+Arrows_BIG
+Arrows_SMALL
