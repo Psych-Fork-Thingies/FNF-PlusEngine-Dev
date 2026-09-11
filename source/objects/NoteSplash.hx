@@ -313,7 +313,6 @@ class NoteSplash extends FlxSprite
 			|| ((note == null || note.noteSplashData.useRGBShader) && (PlayState.SONG == null || !PlayState.SONG.disableNoteRGB));
 		if (!ClientPrefs.data.noteRGB)
 		{
-			rgbShader.copyValues(null);
 			if (canUseSplashShader)
 			{
 				if (colorSwap == null)
@@ -326,6 +325,8 @@ class NoteSplash extends FlxSprite
 		}
 		else
 		{
+			// Reset PixelSplashShaderRef state when toggled back to RGB
+			rgbShader.enabled = true;
 			shader = rgbShader.shader;
 			if (config.allowRGB)
 			{
