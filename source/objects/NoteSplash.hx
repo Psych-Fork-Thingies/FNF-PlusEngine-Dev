@@ -271,6 +271,7 @@ class NoteSplash extends FlxSprite
 
 	public static function clearCache():Void
 	{
+		configs.clear();
 		framesCache.clear();
 	}
 
